@@ -1,0 +1,35 @@
+.column {
+  width: 250px;
+  height: 295px;
+  float: left;
+}
+.san-pham {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+.san-pham > img {
+  width: 220px;
+  height: 220px;
+}
+.san-pham .name {
+  color: red;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.san-pham .prive{
+ color: red;
+ text-align: center;
+ font-size: large;
+ font-weight: bold;
+}
+.san-pham .giacu{
+  color: grey;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
