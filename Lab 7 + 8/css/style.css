@@ -1,28 +1,71 @@
-.vmenu {
-    padding: 0px;
-    margin: 5px;
-    list-style: none;
-    border-radius: 3px;
-    box-shadow: 0 0 2px gray;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-}
+  .text-nav>li {
+    display: inline-block;
+  }
 
-.vmenu a {
-    background: url('/image/2.png') no-repeat 10px center;
-    display: block;
-    border-bottom: 1px dotted orangered;
-    color: orangered;
-    font-variant: small-caps;
-    font-size: larger;
+  .container .nav {
+    display: flex;
+    height: 50px;
+    background-color: chocolate;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 10px chocolate;
+    text-transform: uppercase;
+  }
+
+  .container .nav ul {
+    list-style-type: none;
+  }
+
+  .container .nav .text-nav a {
     text-decoration: none;
-    padding: 8px 5px 8px 30px;
+    color: #fff;
+    display: flex;
+    padding: 16px;
+  }
 
-}
+  .container .nav .text-nav a:hover {
+    text-decoration: none;
+    color: black (225, 14, 14);
+    display: flex;
+    padding: 16px;
+    background-color: #333;
+  }
 
-.vmenu a:hover {
-    background: url('bullet.png') no-repeat 10px center;
-    border-bottom: 1px dotted white;
-    background-color: orangered;
-    color: white;
+  .container .nav .text-nav .sub-nav {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .container .nav .text-nav li a:focus,
+  .container .nav .text-nav li .sub-nav a:focus {
+    background-color: aqua;
+    color: green;
+  }
+
+  .container .nav .text-nav .sub-nav a {
+    display: flex;
+    font-weight: 300;
+    border-bottom: 1px solid #7e7e7e;
+    color: #000;
+    min-width: 150px;
+    padding: 10px 20px;
+  }
+
+  .container .nav .text-nav .sub-nav a:hover {
+    color: #fff;
+    background-color: #000;
     font-weight: bold;
-}
+  }
+
+  .container .nav .text-nav li:hover .sub-nav {
+    display: block;
+  }
