@@ -1,0 +1,47 @@
+.image1{
+    border-radius: 10px;
+}
+.image2{
+    border-radius: 10px;
+}
+.active{
+    background-color: rgb(216, 240, 225);
+     color: brown;
+     border-radius: 10px;
+}
+.offline{
+    background-color: rgb(204, 204, 204);
+    color: black;
+    border-radius: 10px;
+}
+.blue{
+    color: blue;
+    background-color: #d1dce4;
+    border-radius: 10px;
+}
+.red{
+    color: red;
+    background-color: rgb(239, 219, 225);
+    border-radius: 10px;
+}
+.green{
+    color: brown;
+    background-color: rgb(201, 239, 201);
+    border-radius: 10px;
+}
+.purple{
+    color: purple;
+    background-color: rgb(195, 170, 195);
+    border-radius: 10px;
+}
+img{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.checkbox{
+    border-radius: px;
+}
+td{
+    text-align: left;
+}
