@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container .header{
+    background-image: url(image/nen.png);
+    height: 174px;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    min-height: 40px;
+    background-color: blue;
+
+}
+
+.menu ul{
+    list-style: none;
+    background-color: blue;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: large;
+    color: white;
+    padding: 0 5px;
+    line-height: 40px;
+}
+
+.menu ul li a:hover{
+    color: red;
+}
+/* menu con */
+.menu ul ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    box-shadow: 0 0 2px gray;
+    background-color: white;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.menu ul ul li{
+    display: block;
+}
+
+.menu ul ul a{
+    display: block;
+    color: blue;
+    text-decoration: none;
+    font-size: large;
+    font-variant: small-caps;
+    padding: 0 10px;
+    line-height: 30px;
+    z-index: 1000;
+}
+
+.menu ul ul a:hover{
+    color: white;
+    background-color: blue;
+}
+
+.menu ul li:hover ul{
+    display: block;
+
+}
+
+/* marquee */
+marquee{
+    line-height: 25px;
+    min-height: 25px;
+    z-index: -1;
+    color: blue;
+}
+
+/* content */
+.content{
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    margin-bottom: 10px ;
+}
+
+.content article{
+    width: 75%;
+    float: left;
+    background-color: lightblue;
+    min-height: 600px;
+}
+
+.content article iframe[name=page]{
+    width: 100%;
+    height: 800px;
+}
+
+.content aside{
+    width: 25%;
+    float: right;
+    background-color: lightgoldenrodyellow;
+    min-height: 600px;
+    
+}
+
+.lichct .widthR{
+    width: 100%;
+}
+
+.lichct ul{
+    list-style: none;
+}
+
+.lichct ul a{
+    display: block;
+    background-image: url(image/check.png);
+    background-size: 30px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+
+.lichct ul a:hover{
+    color: yellow;
+    text-shadow: 0 0 2px red;
+    background-image: url(image/next.png);
+    background-size: 30px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+.widthR img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.widthR img:hover{
+    box-shadow: 0 5px 5px gray;
+}
+
+
+/* footer */
+footer{
+    clear: both;
+    min-height: 50px;
+    background-color: lightcyan;
+    line-height: 50px;
+    border-top: 1px dotted blue;
+    text-align: center;
+}
