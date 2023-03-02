@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px gray ;
+        }
+
+        .form-control{
+            width: 94%;
+        }
+        .form-control:focus{
+            background-color: yellow;
+        }
+
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            box-shadow: 0 0 10px lightgreen;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">FORM GÓP Ý</h2>
+    <form class="form" action="xuly.php" method="post">
+        <label for="ho_ten">Họ tên:</label>
+        <input class="form-control" type="text" id="ho_ten" name="ho_ten"><br>
+      
+        <label for="email">Email:</label>
+        <input class="form-control" type="email" id="email" name="email"><br>
+      
+        <label for="sdt">Số điện thoại:</label>
+        <input class="form-control" type="tel" id="sdt" name="sdt"><br>
+      
+        <label for="noi_dung">Nội dung:</label>
+        <textarea class="form-control" id="noi_dung" name="noi_dung" cols="70" rows="15"></textarea><br>
+      
+        <input class="btn" type="submit" value="Gửi">
+      </form>
+
+
+</body>
+</html>
